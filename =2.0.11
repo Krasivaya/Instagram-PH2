@@ -1,0 +1,2 @@
+Requirement already satisfied: django in ./virtual/lib/python3.6/site-packages (2.0.2)
+Requirement already satisfied: pytz in ./virtual/lib/python3.6/site-packages (from django) (2019.3)
