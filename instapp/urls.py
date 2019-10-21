@@ -1,5 +1,6 @@
 from django.conf.urls import url, include
 from . import views
+from instapp.views import PostLikeToggle, PostLikeAPIToggle
 
 urlpatterns = [
     url(r'signup/', views.signup, name='signup'),
