@@ -4,6 +4,7 @@ defusedxml==0.6.0
 dj-database-url==0.5.0
 Django==2.0.12
 django-crispy-forms==1.8.0
+django-heroku==0.3.1
 django-mongoengine==0.3.3
 django-rest-framework-mongoengine==3.4.0
 djangorestframework==3.10.3
@@ -27,3 +28,4 @@ social-auth-core==3.2.0
 social-auth-storage-mongoengine==1.0.1
 sqlparse==0.3.0
 urllib3==1.25.6
+whitenoise==4.1.4
