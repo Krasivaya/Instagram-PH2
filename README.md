@@ -36,6 +36,20 @@ No bug known. If you found any, please contact!
 ### Contacts
 Email: semwagacarine@gmail.com
 
+### Live site - Preview
+                    Newsfeed page / Homepage
+![s3](https://user-images.githubusercontent.com/51264308/67236880-6aea2d80-f44a-11e9-94de-95e7a931f3cc.png)
+
+                        Profile page
+![s2](https://user-images.githubusercontent.com/51264308/67236901-74739580-f44a-11e9-8797-090cb976bf69.png)
+
+                    Login Using Github Account
+![s1](https://user-images.githubusercontent.com/51264308/67236926-7f2e2a80-f44a-11e9-9b45-87953cbb7a7b.png)
+
+
+
+
+
 ### Live site
 [Instagram PH2](https://krasivaya-instagram.herokuapp.com/)
 
