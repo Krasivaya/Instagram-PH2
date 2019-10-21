@@ -1,4 +1,5 @@
 import os
+import dj_database_url
 
 # Build paths inside the project like this: os.path.join(BASE_DIR, ...)
 BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
@@ -92,6 +93,14 @@ AUTH_PASSWORD_VALIDATORS = [
     },
 ]
 
+# AUTHENTICATION_BACKENDS = [
+#     'social_core.backends.google.GoogleOpenId',
+#     'social_core.backends.google.GoogleOAuth2',
+#     'social_core.backends.google.GoogleOAuth',
+# ]
+
+# GOOGLE_OAUTH2_KEY = '381056630805-vbei9ftenvqhac060q09ebkaajrkje94.apps.googleusercontent.com'
+# GOOGLE_OAUTH2_SECRET = 'QRTaCa-iJmzvdibGVlia6P63'
 
 # Internationalization
 # https://docs.djangoproject.com/en/1.11/topics/i18n/
