@@ -1,3 +1,6 @@
+<head>
+    <link rel="icon" type="image/png" href="../../../static/images/icon.png">
+</head>
 {% extends 'instagram/layout.html' %}
 {% block content %}
 
@@ -19,20 +22,20 @@
             {% for user_profile in results %}
 
             <div class="container">
-                <div class="row">
+                <a href="{% url 'user_profile' user_profile.user.username  %}"><div class="row">
                     <div class="col-md-3">
                         <img src="{{user_profile.user.profile.profile_picture.url}}" alt=""
                              class="rounded-circle border ml-3 mt-2  mr-3" width="55" height="55">
                     </div>
                     <div class="col-md-6 mt-2">
-                        <span><strong><a href="{% url 'user_profile' user_profile.user.username  %}">{{user_profile.user.username}}</a></strong></span><br>
+                        <span><strong>{{user_profile.user.username}}</strong></span><br>
                         <span class="text-secondary">{{user_profile.user.profile.name}}</span>
                     </div>
                     <div class="col-md-3 mt-3">
-                        <button class="btn btn-sm btn-outline-primary">follow</button>
+                        <button class="btn btn-sm btn-outline-primary"><b>follow</b></button>
                     </div>
 
-                </div>
+                </div></a>
             </div>
             <hr>
 

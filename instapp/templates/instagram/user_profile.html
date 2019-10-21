@@ -1,3 +1,6 @@
+<head>
+    <link rel="icon" type="image/png" href="../../../static/images/icon.png">
+</head>
 {% extends 'instagram/layout.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
@@ -15,11 +18,11 @@
                             <div class="account-heading">
                                 <span class="mr-3 text-secondary username">{{ user_prof.username }}</span>
                                 {% if follow_status %}
-                                <a class="btn btn-sm btn-outline-danger ml-5" href="{% url 'unfollow' user_prof.profile.id %}">Unfollow</a>
+                                <a class="btn btn-sm btn-outline-danger ml-5" href="{% url 'unfollow' user_prof.profile.id %}"><b>Unfollow</b></a>
 
                                 {%else%}
 
-                                <a class="btn btn-sm btn-primary ml-5" href="{% url 'follow' user_prof.profile.id %}">Follow</a>
+                                <a class="btn btn-sm btn-primary ml-5" href="{% url 'follow' user_prof.profile.id %}"><b>Follow</b></a>
                                 {% endif %}
                 
                                 
@@ -39,10 +42,16 @@
         </div>
     </div>
     <hr class="mt-4">
+    <h5 style="text-align: center; cursor:pointer; font-size: 16px;">
+        <img width="3%"  src="../../../static/images/grid-icon-1.png">POSTS                                  
+        <span style=" padding-left: 20px; opacity: 0.5;"><img width="3%" src="../../../static/images/IGTV-512.png">IGTV</span>  
+        <span style=" padding-left: 20px; opacity: 0.5;"><img width="3%" src="../../../static/images/Save-Icon-200x200.png">SAVED</span>  
+        <span style=" padding-left: 20px; opacity: 0.5;"><img width="3%" src="../../../static/images/jee-72-512.png">TAGGED</span>
+    </h5>
     <div class="card-columns">
         {% for image in user_posts %}
         <div class="card">
-            <div class="card-body parent ">
+            <a href="{% url 'comment' image.id %}"><div class="card-body parent ">
                 <div class="im">
                 <img src="{{image.image.url}}" alt="{{image.caption}}" class="card-img">
                 <p id="overlay"class="text"> 
@@ -51,7 +60,7 @@
                      <i class="fas fa-comment ml-4" style="color: white"></i> <span style="color: white">{{image.comments.count}}</span></p>
             
                     </div>
-                    </div>
+                    </div></a>
         </div>
         {% endfor %}
     </div>

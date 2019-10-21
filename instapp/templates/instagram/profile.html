@@ -1,3 +1,6 @@
+<head>
+    <link rel="icon" type="image/png" href="../../../static/images/icon.png">
+</head>
 {% extends 'instagram/layout.html' %}
 {% load crispy_forms_tags %}
 {% block content %}
@@ -57,17 +60,23 @@
         </div>
     </div>
     <hr class="mt-4">
+    <h5 style="text-align: center; cursor:pointer; font-size: 16px;">
+        <img width="3%"  src="../../../static/images/grid-icon-1.png">POSTS                                  
+        <span style=" padding-left: 20px; opacity: 0.5;"><img width="3%" src="../../../static/images/IGTV-512.png">IGTV</span>  
+        <span style=" padding-left: 20px; opacity: 0.5;"><img width="3%" src="../../../static/images/Save-Icon-200x200.png">SAVED</span>  
+        <span style=" padding-left: 20px; opacity: 0.5;"><img width="3%" src="../../../static/images/jee-72-512.png">TAGGED</span>
+    </h5>
     <div class="card-columns">
         {% for image in images %}
             <div class="card">
-                <div class="card-body">
+                <a href="{% url 'comment' image.id %}"><div class="card-body">
                     <img src="{{image.image.url}}" alt="{{image.caption}}" class="card-img">
                     <p id="overlay"class="text"> 
                             <i class="fas fa-heart" style="color:white; font-size: 18"></i> 
                             <span style="color: white">{{image.likes.count}}</span>
                              <i class="fas fa-comment ml-4" style="color: white"></i> <span style="color: white">{{image.comments.count}}</span></p>
                     
-                </div>
+                </div></a>
             </div>
         {% endfor %}
     </div>
