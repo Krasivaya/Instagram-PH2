@@ -44,14 +44,14 @@ Email: semwagacarine@gmail.com
 ![s2](https://user-images.githubusercontent.com/51264308/67236901-74739580-f44a-11e9-8797-090cb976bf69.png)
 
                     Login Using Github Account
-![s1](https://user-images.githubusercontent.com/51264308/67236926-7f2e2a80-f44a-11e9-9b45-87953cbb7a7b.png)
+![s5](https://user-images.githubusercontent.com/51264308/67374536-9459a500-f581-11e9-8d40-1ccf631642a3.png)
 
 
 
 
 
 ### Live site
-[Instagram PH2](https://krasivaya-instagram.herokuapp.com/)
+Livesite is not ready yet - [Instagram PH2](https://krasivaya-instagram.herokuapp.com/)
 
 ### License
 This project is under the [MIT](https://github.com/Krasivaya/github/blob/master/LICENSE) license.
