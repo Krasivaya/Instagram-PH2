@@ -7,7 +7,7 @@ django-crispy-forms==1.8.0
 django-heroku==0.3.1
 django-mongoengine==0.3.3
 django-rest-framework-mongoengine==3.4.0
-djangorestframework==3.10.3
+djangorestframework==3.11.2
 gunicorn==19.9.0
 idna==2.8
 mongoengine==0.18.2
